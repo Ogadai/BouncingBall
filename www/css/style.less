@@ -1,0 +1,94 @@
+﻿@import "../bower_components/font-awesome/less/font-awesome";
+
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    -ms-touch-action: none;
+    touch-action: none;
+}
+
+#view {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.panel-center {
+    position: absolute;
+    left: 50%;
+    top: 100px;
+
+    > * {
+        margin-left: -50%;
+    }
+}
+
+game-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    li {
+        list-style: none;
+    }
+}
+
+.home-links {
+    li {
+        padding: 8px;
+
+        a {
+            display: inline-block;
+            width: 200px;
+            padding: 8px;
+            text-align: center;
+            border: 1px solid #e00000;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: none;
+                background-color: #ff8080;
+            }
+        }
+    }
+}
+
+.game-links {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 4px 4px 0 0;
+    li {
+        display: inline-block;
+        padding: 8px;
+        i {
+            font-size: 2em;
+        }
+    }
+}
+.settings {
+    li {
+        padding: 8px;
+
+        label {
+            display: inline-block;
+            width: 7em;
+        }
+    }
+}

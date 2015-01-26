@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <SchemaVersion>2.0</SchemaVersion>
+        <ProjectGuid>{2d3b60c1-90c4-44b0-a702-4114318964d3}</ProjectGuid>
+        <ProjectHome />
+        <ProjectView>ShowAllFiles</ProjectView>
+        <StartupFile />
+        <WorkingDirectory>.</WorkingDirectory>
+        <OutputPath>.</OutputPath>
+        <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+        <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+        <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+    <ItemGroup>
+        <Content Include="config.xml" />
+        <Content Include="hooks\README.md" />
+        <Content Include="plugins\android.json" />
+        <Content Include="www\index.html" />
+        <Content Include="platforms\android\AndroidManifest.xml" />
+        <Content Include="platforms\android\custom_rules.xml" />
+        <Content Include="platforms\android\assets\_where-is-www.txt" />
+        <Content Include="platforms\android\cordova\defaults.xml" />
+        <Content Include="platforms\android\CordovaLib\AndroidManifest.xml" />
+        <Compile Include="platforms\android\platform_www\cordova.js" />
+        <Content Include="platforms\android\assets\www\index.html" />
+        <Compile Include="platforms\android\assets\www\cordova.js" />
+        <Compile Include="platforms\android\assets\www\cordova_plugins.js" />
+        <Content Include="platforms\android\assets\www\css\index.css" />
+        <Content Include="platforms\android\assets\www\img\logo.png" />
+        <Compile Include="platforms\android\assets\www\js\index.js" />
+        <Compile Include="platforms\android\cordova\lib\android_sdk_version.js" />
+        <Compile Include="platforms\android\cordova\lib\appinfo.js" />
+        <Compile Include="platforms\android\cordova\lib\build.js" />
+        <Compile Include="platforms\android\cordova\lib\check_reqs.js" />
+        <Compile Include="platforms\android\cordova\lib\device.js" />
+        <Compile Include="platforms\android\cordova\lib\emulator.js" />
+        <Compile Include="platforms\android\cordova\lib\exec.js" />
+        <Compile Include="platforms\android\cordova\lib\log.js" />
+        <Compile Include="platforms\android\cordova\lib\run.js" />
+        <Compile Include="platforms\android\cordova\lib\spawn.js" />
+        <Content Include="platforms\android\res\drawable\icon.png" />
+        <Content Include="platforms\android\res\drawable-hdpi\icon.png" />
+        <Content Include="platforms\android\res\drawable-land-hdpi\screen.png" />
+        <Content Include="platforms\android\res\drawable-land-ldpi\screen.png" />
+        <Content Include="platforms\android\res\drawable-land-mdpi\screen.png" />
+        <Content Include="platforms\android\res\drawable-land-xhdpi\screen.png" />
+        <Content Include="platforms\android\res\drawable-ldpi\icon.png" />
+        <Content Include="platforms\android\res\drawable-mdpi\icon.png" />
+        <Content Include="platforms\android\res\drawable-port-hdpi\screen.png" />
+        <Content Include="platforms\android\res\drawable-port-ldpi\screen.png" />
+        <Content Include="platforms\android\res\drawable-port-mdpi\screen.png" />
+        <Content Include="platforms\android\res\drawable-port-xhdpi\screen.png" />
+        <Content Include="platforms\android\res\drawable-xhdpi\icon.png" />
+        <Content Include="platforms\android\res\values\strings.xml" />
+        <Content Include="platforms\android\res\xml\config.xml" />
+        <Content Include="www\css\index.css" />
+        <Content Include="www\img\logo.png" />
+        <Compile Include="www\js\index.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Folder Include="hooks" />
+        <Folder Include="platforms" />
+        <Folder Include="platforms\android" />
+        <Folder Include="platforms\android\assets" />
+        <Folder Include="platforms\android\assets\www" />
+        <Folder Include="platforms\android\assets\www\css" />
+        <Folder Include="platforms\android\assets\www\img" />
+        <Folder Include="platforms\android\assets\www\js" />
+        <Folder Include="platforms\android\cordova" />
+        <Folder Include="platforms\android\cordova\lib" />
+        <Folder Include="platforms\android\cordova\node_modules" />
+        <Folder Include="platforms\android\cordova\node_modules\q" />
+        <Folder Include="platforms\android\cordova\node_modules\q\benchmark" />
+        <Folder Include="platforms\android\cordova\node_modules\shelljs" />
+        <Folder Include="platforms\android\cordova\node_modules\shelljs\bin" />
+        <Folder Include="platforms\android\cordova\node_modules\shelljs\scripts" />
+        <Folder Include="platforms\android\cordova\node_modules\shelljs\src" />
+        <Folder Include="platforms\android\cordova\node_modules\which" />
+        <Folder Include="platforms\android\cordova\node_modules\which\bin" />
+        <Folder Include="platforms\android\CordovaLib" />
+        <Folder Include="platforms\android\CordovaLib\src" />
+        <Folder Include="platforms\android\CordovaLib\src\com" />
+        <Folder Include="platforms\android\CordovaLib\src\com\squareup" />
+        <Folder Include="platforms\android\CordovaLib\src\com\squareup\okhttp" />
+        <Folder Include="platforms\android\CordovaLib\src\com\squareup\okhttp\internal" />
+        <Folder Include="platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http" />
+        <Folder Include="platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy" />
+        <Folder Include="platforms\android\CordovaLib\src\com\squareup\okhttp\internal\tls" />
+        <Folder Include="platforms\android\CordovaLib\src\org" />
+        <Folder Include="platforms\android\CordovaLib\src\org\apache" />
+        <Folder Include="platforms\android\CordovaLib\src\org\apache\cordova" />
+        <Folder Include="platforms\android\libs" />
+        <Folder Include="platforms\android\platform_www" />
+        <Folder Include="platforms\android\res" />
+        <Folder Include="platforms\android\res\drawable" />
+        <Folder Include="platforms\android\res\drawable-hdpi" />
+        <Folder Include="platforms\android\res\drawable-land-hdpi" />
+        <Folder Include="platforms\android\res\drawable-land-ldpi" />
+        <Folder Include="platforms\android\res\drawable-land-mdpi" />
+        <Folder Include="platforms\android\res\drawable-land-xhdpi" />
+        <Folder Include="platforms\android\res\drawable-ldpi" />
+        <Folder Include="platforms\android\res\drawable-mdpi" />
+        <Folder Include="platforms\android\res\drawable-port-hdpi" />
+        <Folder Include="platforms\android\res\drawable-port-ldpi" />
+        <Folder Include="platforms\android\res\drawable-port-mdpi" />
+        <Folder Include="platforms\android\res\drawable-port-xhdpi" />
+        <Folder Include="platforms\android\res\drawable-xhdpi" />
+        <Folder Include="platforms\android\res\values" />
+        <Folder Include="platforms\android\res\xml" />
+        <Folder Include="platforms\android\src" />
+        <Folder Include="platforms\android\src\com" />
+        <Folder Include="platforms\android\src\com\scottlogic" />
+        <Folder Include="platforms\android\src\com\scottlogic\bouncingball" />
+        <Folder Include="plugins" />
+        <Folder Include="www" />
+        <Folder Include="www\css" />
+        <Folder Include="www\img" />
+        <Folder Include="www\js" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+    <ProjectExtensions>
+        <VisualStudio>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+            <WebProjectProperties>
+              <UseIIS>False</UseIIS>
+              <AutoAssignPort>True</AutoAssignPort>
+              <DevelopmentServerPort>0</DevelopmentServerPort>
+              <DevelopmentServerVPath>/</DevelopmentServerVPath>
+              <IISUrl>http://localhost:48022/</IISUrl>
+              <NTLMAuthentication>False</NTLMAuthentication>
+              <UseCustomServer>True</UseCustomServer>
+              <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+              <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+            </WebProjectProperties>
+          </FlavorProperties>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+            <WebProjectProperties>
+              <StartPageUrl>
+              </StartPageUrl>
+              <StartAction>CurrentPage</StartAction>
+              <AspNetDebugging>True</AspNetDebugging>
+              <SilverlightDebugging>False</SilverlightDebugging>
+              <NativeDebugging>False</NativeDebugging>
+              <SQLDebugging>False</SQLDebugging>
+              <ExternalProgram>
+              </ExternalProgram>
+              <StartExternalURL>
+              </StartExternalURL>
+              <StartCmdLineArguments>
+              </StartCmdLineArguments>
+              <StartWorkingDirectory>
+              </StartWorkingDirectory>
+              <EnableENC>False</EnableENC>
+              <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+            </WebProjectProperties>
+          </FlavorProperties>
+        </VisualStudio>
+    </ProjectExtensions>
+</Project>
