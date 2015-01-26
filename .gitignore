@@ -19,7 +19,7 @@ $RECYCLE.BIN/
 
 # Cordova
 /platforms/
-/plugins/
+/plugins/org.*
 
 # Project
 /www/bower_components/
