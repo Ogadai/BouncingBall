@@ -24,3 +24,7 @@ $RECYCLE.BIN/
 # Project
 /www/bower_components/
 BouncingBall.v12.suo
+
+#C9
+.c9/
+npm-debug.log
